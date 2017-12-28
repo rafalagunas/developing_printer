@@ -12,6 +12,9 @@ import {
   View
 } from 'react-native';
 
+import {NativeModules} from 'react-native';
+module.exports = NativeModules.ToastModule;
+
 const instructions = Platform.select({
   ios: 'Press Cmd+R to reload,\n' +
     'Cmd+D or shake for dev menu',

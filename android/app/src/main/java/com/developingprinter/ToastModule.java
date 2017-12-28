@@ -8,10 +8,14 @@ import com.facebook.react.bridge.ReactContextBaseJavaModule;
 import com.facebook.react.bridge.ReactMethod;
 import java.util.Map;
 import java.util.HashMap;
+
 public class ToastModule extends ReactContextBaseJavaModule {
+
   private static final String DURATION_SHORT_KEY = "SHORT";
   private static final String DURATION_LONG_KEY = "LONG";
+
   private Activity mActivity = null;
+  
   public ToastModule(ReactApplicationContext reactContext, Activity mActivity) {
     super(reactContext);
     mActivity = activity;

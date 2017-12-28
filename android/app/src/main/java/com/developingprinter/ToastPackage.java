@@ -1,4 +1,4 @@
-package com.developingprinter;
+package com.developingprinter.ToastPackage;
 
 import android.app.Activity;
 import java.util.*;
@@ -14,10 +14,11 @@ public class ToastPackage implements ReactPackage {
   public ToastPackage(Activity activity) {
     mActivity = activity;
   }
+  
   @Override
   public List<NativeModule> createNativeModules(ReactApplicationContext reactContext) {
     List<NativeModule> modules = new ArrayList<>();
-    modules.add(new ToastModule(reactContext, mActivity));
+    modules.add(new ToastModule(reactContext));
     
     return modules;
   }
